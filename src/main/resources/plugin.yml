@@ -1,0 +1,23 @@
+name: iHackFX_Plugin
+version: '${project.version}'
+main: com.ihackfx.plugin.Plugin
+api-version: 1.16
+load: POSTWORLD
+website: https://github.com/iHackFX/
+softdepend: [ LuckPerms ]
+Maintenance:
+  bypass:
+    - AuthMe
+commands:
+  troll:
+    description: Troll players
+    usage: /troll <type> <nickname>
+    permission: iHackFXPlugin.trolling
+  a:
+    description: Admin Chat
+    usage: /a <message>
+    permission: iHackFXPlugin.AdmChat
+  discord:
+    description: Discord plugin manager
+    usage: /discord <message>
+    permission: iHackFXPlugin.Discord
